@@ -1,0 +1,98 @@
+.lista-registros {
+    width: 90%;
+    max-width: 1200px; /* Limite máximo para largura */
+    margin: 2rem auto; /* Margem superior e inferior */
+    background-color: #f9fafb; /* Background mais claro e suave */
+    border-radius: 12px; /* Bordas mais arredondadas */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra leve com mais profundidade */
+    padding: 2rem; /* Espaçamento interno */
+    overflow-x: auto; /* Suporte para rolagem horizontal */
+}
+
+.lista-registros h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #2c3e50; /* Cor de texto escura */
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.lista-registros table {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaços entre bordas */
+}
+
+.lista-registros th,
+.lista-registros td {
+    padding: 1rem; /* Espaçamento interno nas células */
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0; /* Linha divisória */
+    vertical-align: middle; /* Alinhamento vertical */
+}
+
+.lista-registros th {
+    background-color: #f4f6f9; /* Cor de fundo para cabeçalhos */
+    font-weight: bold;
+    color: #34495e; /* Cor do texto */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    letter-spacing: 0.05em; /* Espaçamento entre letras */
+}
+
+.lista-registros td {
+    color: #555;
+}
+
+.lista-registros tbody tr:nth-child(even) {
+    background-color: #f8f9fa; /* Alternância de cores para linhas pares */
+}
+
+.lista-registros tbody tr:hover {
+    background-color: #e3e3e3; /* Cor de fundo ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Ações */
+.action-column {
+    display: flex;
+    gap: 8px;
+}
+
+.action-column a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave */
+}
+
+.action-column a:hover {
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+.espaco_coluna {
+    background-color: #3498db; /* Azul para edição */
+}
+
+.espaco_coluna:hover {
+    background-color: #2980b9; /* Tom mais escuro ao passar o mouse */
+}
+
+.action-column a:last-child {
+    background-color: #e74c3c; /* Vermelho para deletar */
+}
+
+.action-column a:last-child:hover {
+    background-color: #c0392b; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Estilos para mensagens */
+.lista-registros p {
+    color: #e74c3c; /* Vermelho para mensagens de erro */
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}

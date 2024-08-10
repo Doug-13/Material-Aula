@@ -1,0 +1,94 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fundo um pouco mais escuro para maior contraste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px); /* Adiciona um efeito de desfoque */
+}
+
+.modal-content {
+    background: #fff;
+    padding: 30px; /* Aumentado para um espaçamento mais confortável */
+    border-radius: 10px; /* Canto arredondado para suavizar a aparência */
+    width: 500px;
+    max-width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
+    animation: fadeIn 0.3s ease;
+    position: relative;
+    overflow: hidden; /* Previne o conteúdo de ultrapassar os limites */
+}
+
+.modal-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header .close-button {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.modal-header .close-button:hover {
+    color: #d9534f; /* Muda a cor no hover para um feedback visual */
+}
+
+.modal-body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 30px; /* Aumentado para espaçamento adequado */
+}
+
+.modal-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave para hover */
+}
+
+.modal-actions button:first-child {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.modal-actions button:last-child {
+    background-color: #d9534f;
+    color: white;
+}
+
+.modal-actions button:hover {
+    opacity: 0.9;
+    transform: scale(1.05); /* Leve aumento de tamanho para destaque */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

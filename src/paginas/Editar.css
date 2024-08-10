@@ -1,0 +1,89 @@
+.App {
+    font-family: 'Arial', sans-serif; /* Fonte clara e legível */
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    padding: 20px;
+  }
+  
+  .Header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-container {
+    max-width: 600px; /* Largura máxima para o formulário */
+    margin: 0 auto; /* Centralizar formulário */
+    background-color: #fff; /* Fundo branco para o formulário */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+  
+  legend h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: calc(100% - 12px); /* Largura do campo de entrada */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 16px;
+    box-sizing: border-box; /* Inclui o padding na largura total */
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  select:focus {
+    border-color: #4CAF50; /* Cor de foco */
+    outline: none; /* Remove a borda de foco padrão */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Sombra ao focar */
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave */
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049; /* Cor ao passar o mouse */
+  }
+  
+  .error {
+    color: #d9534f; /* Vermelho para mensagens de erro */
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .mensagem {
+    color: #28a745; /* Verde para mensagens de sucesso */
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  

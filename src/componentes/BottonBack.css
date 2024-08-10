@@ -1,0 +1,37 @@
+/* Estilo para o container do botão */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    margin-top: 20px;
+}
+
+/* Estilo para o botão "Voltar" */
+.button-container button {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    font-size: 16px; /* Define o tamanho da fonte */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao botão */
+}
+
+/* Estilo do botão ao passar o mouse */
+.button-container button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação no hover */
+}
+
+/* Estilo do botão ao pressionar */
+.button-container button:active {
+    background-color: #004494; /* Cor de fundo ao clicar */
+    transform: translateY(1px); /* Efeito de pressionado */
+}
+
+/* Estilo do botão para acessibilidade */
+.button-container button:focus {
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Adiciona contorno de foco */
+}

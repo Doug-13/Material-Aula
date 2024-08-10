@@ -1,0 +1,65 @@
+/* Header.css */
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 150px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 150px;
+    margin-right: 10px;
+    border-radius: 50%; /* Torna a imagem circular, se desejar */
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .login-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .login-input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .login-input:focus {
+    border-color: #3498db;
+  }
+  
+  .login-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #2980b9;
+  }
+  
